@@ -13,15 +13,6 @@ all: firmware.elf
 hello.txt:
 	echo "hello world!" > hello.txt
 
-# main.i: main.c
-# 	$(CPP) main.c > main.i
-
-# main.s: main.i
-# 	$(CC) -S main.i
-
-# whatever.s: whatever.c
-# 	$(CC) -S whatever.c
-
 %.i: %.c
 	$(CPP) $< > $@
 
